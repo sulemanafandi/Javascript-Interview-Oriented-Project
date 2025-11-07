@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.ListContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1 rem;
+    padding: 30px;
+    background-color: lightblue;
+}
+
+.ListItem{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: zoom-in;
+}

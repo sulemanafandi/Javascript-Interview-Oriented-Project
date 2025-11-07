@@ -1,0 +1,13 @@
+/* .redbg {
+  background-color: red;
+} */
+
+/* Question 2 */
+.light {
+  background-color: white;
+  color: black;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
