@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // loop start 
+        // var arr = [
+        //     ["harray",17,"male","BE"],
+        //     ["khasif",18,"male","BE"],
+        //     ["naveed",19,"male","BE"],
+        //     ["aisha",18,"female","Bachlor"],
+        //     ["assma",14,"female","Bcom"]
+        // ];
+        // for(var a = 0; a < 5; a++){
+        //     document.write(arr[a] + "<br>");
+        // }
+
+
+        // 2nd start
+        // var arr = [
+        //     ["harray",17,"male","BE"],
+        //     ["khasif",18,"male","BE"],
+        //     ["naveed",19,"male","BE"],
+        //     ["aisha",18,"female","Bachlor"],
+        //     ["assma",14,"female","Bcom"]
+        // ];
+        // for(var a = 0; a < 5; a++){
+        //     for(b = 0; b < 4; b++){
+        //         document.write(arr[a][b] + " ");
+        //     }
+        //     document.write("<br>");
+        // }
+
+
+        // 3rd start tabular foam
+        // var arr = [
+        //     ["harray",17,"male","BE"],
+        //     ["khasif",18,"male","BE"],
+        //     ["naveed",19,"male","BE"],
+        //     ["aisha",18,"female","Bachlor"],
+        //     ["assma",14,"female","Bcom"]
+        // ];
+        // document.write("<table border = '1px' colspan= '0' cellspacing='0'>" );
+        // for(var a = 0; a < 5; a++){
+        //     document.write("<tr>")
+        //     for(b = 0; b < 4; b++){
+        //         document.write("<td>" + arr[a][b] + " " + "</td>");
+        //     }
+        //     document.write("<tr>");
+        // }
+        //     document.write("</table>");
+
+
+        // length gitna data dalo count kar nay ki zarorat nahi han for loop may .sairf for loop may change howa han.
+        
+        var arr = [
+            ["harray",17,"male","BE"],
+            ["khasif",18,"male","BE"],
+            ["naveed",19,"male","BE"],
+            ["aisha",18,"female","Bachlor"],
+            ["assma",14,"female","Bcom"]
+        ];
+        document.write("<table border = '1px' colspan= '0' cellspacing='0'>" );
+        for(var a = 0; a < arr.length; a++){
+            document.write("<tr>")
+            for(b = 0; b < arr[a].length; b++){
+                document.write("<td>" + arr[a][b] + " " + "</td>");
+            }
+            document.write("<tr>");
+        }
+            document.write("</table>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

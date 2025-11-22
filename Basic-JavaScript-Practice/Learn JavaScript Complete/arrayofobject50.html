@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // first
+        // var student = [
+        //     {name : 'suleman', age : 17 },
+        //     {name : 'usman', age : 14},
+        //     {name : 'ayan', age :11}
+        // ];
+        //     console.log(student);
+        //     console.log(student[2]);
+
+
+
+        //second
+        var student = [
+            {name : "salman", age : 16, contact : "03492574988"},
+            {name : "tanaji", age : 30, contact : "03452574988"},
+            {name : "babajee", age : 40, contact : "03462574988"},
+            {name : "abo", age : 35, contact : "03472574988"},
+            {name : "lala", age : 90, contact : "03482574988"}
+        ];    
+            console.log(student);
+            document.write("<ul>")
+            for(var a = 0; a <= student.length; a++){
+                console.log(student[a].name +"  "+student[a].age);
+                document.write("<li>"+student[a].name + "  " + student[a].age + "<li>");
+            }
+            document.write("<ul>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

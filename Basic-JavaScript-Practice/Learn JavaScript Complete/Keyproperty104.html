@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myinput">
+
+
+    <script>
+        var target = document.querySelector("#myinput");
+        target.addEventListener("keydown",function(t){
+            console.clear();
+
+            var text = "You Preessed button. " + t.key;
+
+            console.log(text);
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+    }
+    </style>
+<body>
+    <div id="box"></div>
+
+
+    <script>
+
+        
+            var left = 0 ;
+            var up = 0 ;
+
+
+        var target = document.querySelector("body");
+        target.addEventListener("keydown",function(e){
+            console.clear();
+
+            switch(e.key) {
+                case "ArrowRight":
+                    left =  left + 5 ;
+                    break;
+                case "ArrowLeft":
+                    left =  left - 5 ;
+                    break;
+                case "ArrowUp":
+                    up =  up + 5 ;
+                    break;
+                case "ArrowDown":
+                    up =  up - 5 ;
+                    break;     
+                default:
+                    console.log( "enter your valid value :");
+                   break;
+            }
+                 console.log("left : " + left);
+                console.log("up  :  " + up);
+
+
+                var kam = document.querySelector("#box");
+
+
+                kam.style.marginLeft = left + "px";
+                kam.style.marginTop = up + "px";
+        });
+    </script>
+</body>
+</html>

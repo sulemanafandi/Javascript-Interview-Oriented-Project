@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+    document.addEventListener("mousemove",function(e){
+        console.clear();
+
+        var x = e.clientX;
+        var y = e.clientY;
+
+
+        console.log("client x : " + x);
+        console.log("client y : " +  y);
+    });
+        
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 500px;
+            height: 500px;
+            background-color: blanchedalmond;
+            border-radius: 15px;
+            border: 1px solid gold;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+
+
+
+
+    <script>
+        var target = document.querySelector("#box");
+        target.addEventListener('mousemove', function(e){
+        console.clear();
+
+        var x = e.clientX;
+        var y = e.clientY;
+
+
+        console.log("client x : " + x);
+        console.log("client y : " +  y);
+    });
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

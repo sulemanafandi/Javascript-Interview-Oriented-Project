@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function sal(){
+        //     console.log("salman");
+        //     console.log("shah");
+        //     console.log("salo");
+        // }
+        // sal();
+
+
+        // function *geratorit(){
+        //     console.log("salman");
+        //     console.log("shah");
+        //     console.log("salo");
+        // }
+        // let a = geratorit();
+        // console.log(a);
+
+
+
+
+        // function *geratorit(){
+        //     console.log("salman");
+        //     console.log("shah");
+        //     console.log("salo");
+        // }
+        // let g = geratorit();
+        // console.log(g.next());
+
+
+
+
+        // function *geratorit(){
+        //     console.log("salman");
+        //     yield 'Yield No: 1 ';
+        //     console.log("shah");
+        //     console.log("salo");
+        // }
+        // let g = geratorit();
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+
+
+        // function *geratorit(){
+        //     console.log("salman");
+        //     yield 'Yield No: 1 ';
+        //     yield console.log("shah");
+        //     console.log("salo");
+        // }
+        // let g = geratorit();
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+
+        // function *geratorit(){
+
+        //     yield 'First :1 ';
+        //     yield 'First :2 ';
+        // }
+        // let g = geratorit();
+
+        // console.log(g.next());
+        // g.next();
+        // console.log(g.next());
+
+
+
+
+
+        // function *geratorit(){
+
+        //     yield 'First :1 ';
+        //     yield 'First :2 ';
+        //     yield 'First :3 ';
+        // }
+        // let g = geratorit();
+
+        // console.log(g.next().value);
+        // g.next();
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+
+
+
+
+        // function *geratorit(){
+
+        //     yield 'First :1 ';
+        //     yield 'First :2 ';
+        //     yield 'First :3 ';
+        // }
+        // let g = geratorit();
+
+        // for(let k of g){
+        //     console.log(k);
+        // }
+        
+        
+
+
+
+        // function *geratorit(){
+
+        //     let nexNum = 300;
+        //     while(true){
+        //         yield(nexNum++);
+        //     }
+        // }
+        // let g = geratorit();
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+
+
+
+
+        // function *geratorit(){
+
+        //     let nexNum = 300;
+        //     while(true){
+        //         yield(nexNum++);
+        //     }
+        // }
+        // let g = geratorit();
+        
+        // for (let E of g) {
+        //     if(E > 308) break;
+        //     console.log(E);
+        // }
+
+
+
+
+
+    // function *geratorit(){
+
+    //         let result = yield;
+    //         console.log(`Result : ${result}`)
+            
+    //     }
+    //     let g = geratorit();
+    //     g.next();
+    //     g.next(500);
+
+
+
+
+
+        // function *geratorit(){
+
+        //     let result = (yield) * 10;
+        //     console.log(`Result : ${result}`)
+            
+        // }
+        // let g = geratorit();
+        // g.next();
+        // g.next(500);
+
+
+
+
+
+        // function *geratorit(){
+
+        //     let result = [yield,yield,yield,yield];
+        //     console.log(`Result : ${result}`)
+            
+        // }
+        // let g = geratorit();
+        // g.next();
+        // g.next(500);
+        // g.next(600);
+        // g.next(700);
+        // g.next("Javascript");
+
+
+
+
+        
+    //     function *geratorit(){
+
+    //         yield 55;
+    //         yield ["Node","Angular","React"];            
+    //     }
+    //     let g = geratorit();
+    //   console.log(g.next());
+    //   console.log(g.next());
+
+
+
+    // function *geratorit(){
+
+    //         yield 55;
+    //         yield* ["Node","Angular","React"];            
+    //     }
+    //     let g = geratorit();
+    //   console.log(g.next());
+    //   console.log(g.next().value);
+    //   console.log(g.next());
+    //   console.log(g.next());
+    //   console.log(g.next());
+
+
+
+    //     function *geratorit(){
+
+    //         yield "PHP";
+    //         yield "Node";
+    //         yield"Angular";
+    //         yield"React";            
+    //     }
+    //     let g = geratorit();
+    //   console.log(g.next().value);
+    //   console.log([...g]);
+    
+
+
+
+        function *geratorit(){
+
+            yield "PHP";
+            yield "Node";
+            yield"Angular";
+            yield"React";            
+        }
+        let g = geratorit();
+      console.log(g.next().value);
+      console.log(g.return('Ending Now'));
+      console.log(g.next().value);
+
+    
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

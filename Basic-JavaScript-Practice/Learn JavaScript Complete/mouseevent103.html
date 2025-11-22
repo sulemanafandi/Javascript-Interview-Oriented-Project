@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+    #box{
+        width: 400px;
+        height: 300px;
+        margin: 40px;
+        background-color: rgb(36, 58, 36);
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+</style>
+<body>
+    <div id="box"></div>
+
+    <script>
+        var target = document.querySelector("#box");
+        target.addEventListener("mousedown",function(e){
+            var text = " you pressed button : " + e.button;
+            console.clear();
+            console.log(text);
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+    #box{
+        width: 400px;
+        height: 300px;
+        margin: 40px;
+        background-color: rgb(36, 58, 36);
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+</style>
+<body>
+    <div id="box"></div>
+
+    <script>
+        var target = document.querySelector("#box");
+        target.addEventListener("mousedown",function(e){
+            var text = e.button;
+            var color;
+
+            switch(text){
+                case 0:
+                    color = "green";
+                    break;
+                case 1:
+                    color = "black";
+                    break;
+                case 2:
+                    color = "blue";
+                    break;
+                default:
+                    color = "red";
+                    break;                    
+
+            }
+
+            console.clear();
+            // console.log(color);
+            target.style.backgroundColor = color;
+
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

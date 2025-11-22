@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        background-color: brown;
+        border: 2px solid seashell;
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+        margin: 100px;
+    }
+</style>
+<body>
+    <div id="box"></div>
+
+<script>
+    var target = document.querySelector("#box");
+    window.addEventListener("offline",function(){
+        target.innerHTML = "Your Offline";
+        target.style.backgroundColor = "lightgreen";
+    });
+    window.addEventListener("online",function(){
+        target.innerHTML = "Your Online";
+        target.style.backgroundColor = "lightgray";
+    });
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        background-color: brown;
+        border: 2px solid seashell;
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+        margin: 100px;
+    }
+</style>
+<body onoffline="nolive()">
+    <div id="box"></div>
+
+<script>
+    var target = document.querySelector("#box");
+
+    function nolive(){
+        target.innerHTML = "Your Offline";
+        target.style.backgroundColor = "lightgreen";
+
+    }
+    function nolive(){
+        target.innerHTML = "Your Online";
+        target.style.backgroundColor = "lightgray";
+
+    }
+</script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+    console.log(navigator.onLine);
+
+    if(navigator.onLine){
+        console.log("you are online");
+    }else{
+        console.log("you are offline");
+    }
+
+</script>
+</body>
+</html>

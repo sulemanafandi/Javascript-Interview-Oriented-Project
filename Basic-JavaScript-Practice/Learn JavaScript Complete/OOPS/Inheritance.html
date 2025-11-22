@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // class employee{
+        //     constructor(){
+        //         console.log("This is Constructor Employee");
+        //     }
+
+        // }
+        // class manager extends employee{
+            
+        // }
+        // let a = new manager();
+
+
+
+
+//        class employee{
+//         constructor(name,age,salary){
+//             this.stname = name;
+//             this.stage = age;
+//             this.stsalary = salary;
+//             console.log(`My Name is ${this.stname} and age is ${this.stage} and salary is ${this.stsalary}`);
+//         }
+//  }
+//         class manager extends employee{
+            
+//  }
+//         let a = new manager("Muhammad Suleman",17,90000);
+
+
+
+
+
+        // class Employee{
+        //     constructor(name){
+        //         console.log(`hello ${name}`);
+        //     }
+        // }
+
+        // class manager extends Employee{
+            
+        // }
+
+        // let a = new manager("salman");
+
+
+
+
+
+        
+        // class Employee{
+        //     constructor(name){
+        //         this.stname = name;
+        //     }
+        //     salo(){
+        //         console.log(`Employee ${this.stname}`);
+        //     }
+        // }
+
+        // class manager extends Employee{
+        //     sal(){
+        //         super.salo();
+        //         console.log(`manager ${this.stname}`);
+        //     }
+        // }
+
+        // let a = new manager("salman");
+        // let b = new Employee("shahid");
+        // a.sal();
+        // b.salo();
+
+
+
+
+
+
+
+
+
+
+        // class Employee{
+        //     constructor(name, age, salary){
+        //         this.stname = name;
+        //         this.stage = age;
+        //         this.stsalary = salary;
+        //     }
+        //     salo(){
+        //         document.write(`<h3>Employee Class </h3>
+        //                     Name : ${this.stname} <br>
+        //                     Age : ${this.stage} <br>
+        //                     Salary : ${this.stsalary}<br>`);
+        //     }
+        // }
+
+        // class manager extends Employee{
+
+        // }
+
+        // let a = new manager("salman",17);
+        // a.salo();
+ 
+        
+
+
+
+        
+        class Employee{
+            constructor(name, age, salary){
+                this.stname = name;
+                this.stage = age;
+                this.stsalary = salary;
+            }
+            salo(){
+                document.write(`<h3>Employee Class </h3>
+                            Name : ${this.stname} <br>
+                            Age : ${this.stage} <br>
+                            Salary : ${this.stsalary}<br>`);
+            }
+        }
+
+        class manager extends Employee{
+            sal(){
+                let ta = 3000;
+                let pa = 300;
+                let totalsalary = this.stsalary + ta + pa ;
+
+
+                document.write(`<h3>Manager Class </h3>
+                    Name : ${this.stname} <br>
+                    Age : ${this.stage} <br>
+                    Salary : ${totalsalary}<br>`);
+
+            }
+        }
+        class test extends manager{
+
+        }
+
+        let a = new manager("salman",17,90000);
+        let b = new Employee("M.salman",17,50000);
+        let c= new test("salman",17,90000);
+        a.sal();
+        b.salo();
+        c.salo();
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

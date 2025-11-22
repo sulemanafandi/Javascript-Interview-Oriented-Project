@@ -1,0 +1,281 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+    }
+    #myinput{
+        font-size: 21px;
+        padding: 15px;
+        width: 70%;
+    }
+</style>
+<body>
+    <h2>javascript clipboard Event function</h2>
+    <input type="text" id="myinput">
+
+
+    <script>
+        document.querySelector("#myinput").addEventListener("copy",function(){
+            console.clear();
+
+            console.log("you copy text");
+
+        });
+
+        document.querySelector("#myinput").addEventListener("cut",function(){
+            console.clear();
+
+            console.log("you cut text");
+        });
+
+
+        document.querySelector("#myinput").addEventListener("paste",function(){
+            console.clear();
+
+            console.log("you Pasted text");
+        });
+
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+    }
+    #myinput{
+        font-size: 21px;
+        padding: 15px;
+        width: 70%;
+    }
+</style>
+<body>
+    <h2>javascript clipboard Event function</h2>
+    <input type="text" id="myinput">
+
+
+    <script>
+        var target = document.querySelector("#myinput");
+        document.querySelector("#myinput").addEventListener("copy",function(){
+            console.clear();
+
+            console.log("you copy text");
+            target.style.backgroundColor = "lightgreen";
+            
+        });
+
+        document.querySelector("#myinput").addEventListener("cut",function(){
+            console.clear();
+
+            console.log("you cut text");
+            target.style.backgroundColor = "pink";
+
+        });
+
+
+        document.querySelector("#myinput").addEventListener("paste",function(){
+            console.clear();
+
+            console.log("you Pasted text");
+            target.style.backgroundColor = "lightblue";
+
+        });
+
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+    }
+    #myinput{
+        font-size: 21px;
+        padding: 15px;
+        width: 70%;
+    }
+    #box{
+        background-color: lightgoldenrodyellow;
+        width: 400px;
+        height: 250px;
+        padding: 15px;
+        border: 1px solid salmon;
+    }
+</style>
+<body>
+    <h2>javascript clipboard Event function</h2>
+    <input type="text" id="myinput">
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam, dolorum vitae, odio eos debitis molestiae molestias quo distinctio porro quaerat natus, neque consequatur! Distinctio nostrum quam quos consequatur? Soluta, itaque temporibus cumque obcaecati nemo maxime dolorum asperiores error. Aspernatur doloremque ex quas eligendi explicabo numquam ipsum quasi voluptas cum aliquam vel ullam sed beatae dolorum maxime, reprehenderit, sequi pariatur iusto, quo earum! Autem dicta laudantium enim, illum reprehenderit sequi.</div>
+
+
+    <script>
+        var target = document.querySelector("#myinput");
+        var box = document.querySelector("#box");
+        document.querySelector("#myinput").addEventListener("copy",function(){
+            console.clear();
+
+            console.log("you copy text");
+            target.style.backgroundColor = "lightgreen";
+            
+        });
+
+        document.querySelector("#myinput").addEventListener("cut",function(){
+            console.clear();
+
+            console.log("you cut text");
+            target.style.backgroundColor = "pink";
+
+        });
+
+
+        document.querySelector("#myinput").addEventListener("paste",function(){
+            console.clear();
+
+            console.log("you Pasted text");
+            target.style.backgroundColor = "lightblue";
+
+        });
+
+
+
+        document.querySelector("#box").addEventListener("copy",function(){
+            console.clear();
+
+            box.style.backgroundColor = "lightgreen";
+            
+        });
+
+        document.querySelector("#box").addEventListener("cut",function(){
+            console.clear();
+
+            box.style.backgroundColor = "lightblue";
+            
+        });
+
+
+        document.querySelector("#box").addEventListener("paste",function(){
+            console.clear();
+
+            box.style.backgroundColor = "pink";
+            
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+    }
+    #myinput{
+        font-size: 21px;
+        padding: 15px;
+        width: 70%;
+    }
+    #box{
+        background-color: lightgoldenrodyellow;
+        width: 400px;
+        height: 250px;
+        padding: 15px;
+        border: 1px solid salmon;
+    }
+</style>
+<body>
+    <h2>javascript clipboard Event function</h2>
+    <input type="text" id="myinput">
+    <div id="box" oncopy = "copyfunction()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam, dolorum vitae, odio eos debitis molestiae molestias quo distinctio porro quaerat natus, neque consequatur! Distinctio nostrum quam quos consequatur? Soluta, itaque temporibus cumque obcaecati nemo maxime dolorum asperiores error. Aspernatur doloremque ex quas eligendi explicabo numquam ipsum quasi voluptas cum aliquam vel ullam sed beatae dolorum maxime, reprehenderit, sequi pariatur iusto, quo earum! Autem dicta laudantium enim, illum reprehenderit sequi.</div>
+
+
+    <script>
+        var target = document.querySelector("#myinput");
+        var box = document.querySelector("#box");
+        document.querySelector("#myinput").addEventListener("copy",function(){
+            console.clear();
+
+            console.log("you copy text");
+            target.style.backgroundColor = "lightgreen";
+            
+        });
+
+        document.querySelector("#myinput").addEventListener("cut",function(){
+            console.clear();
+
+            console.log("you cut text");
+            target.style.backgroundColor = "pink";
+
+        });
+
+
+        document.querySelector("#myinput").addEventListener("paste",function(){
+            console.clear();
+
+            console.log("you Pasted text");
+            target.style.backgroundColor = "lightblue";
+
+        });
+
+
+
+        document.querySelector("#box").addEventListener("copy",function(){
+            console.clear();
+
+            box.style.backgroundColor = "lightgreen";
+            
+        });
+
+        document.querySelector("#box").addEventListener("cut",function(){
+            console.clear();
+
+            box.style.backgroundColor = "lightblue";
+            
+        });
+
+
+        document.querySelector("#box").addEventListener("paste",function(){
+            console.clear();
+
+            box.style.backgroundColor = "pink";
+            
+        });
+
+
+        function copyfunction(){
+            box.style.backgroundColor = "lightgray";
+        }
+    </script>
+</body>
+</html>

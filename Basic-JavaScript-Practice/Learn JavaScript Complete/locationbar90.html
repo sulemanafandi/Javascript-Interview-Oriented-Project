@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Javascript: Location Object</h1>
+
+<button onclick=" newfunc()">Click Reload</button>
+<button onclick=" newfun()">Click assign</button>
+<button onclick=" newfu()">Click replace</button>
+
+
+
+
+
+<script>
+    console.log(location.href);
+    
+    document.write(location.href);
+
+
+    function newfunc(){
+        location.reload();
+    }
+    function newfun(){
+        location.assign("https://www.google.com");
+    }
+    function newfu(){
+        location.replace("https://www.google.com");
+    }
+</script>
+</body>
+</html>

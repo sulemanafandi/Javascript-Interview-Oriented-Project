@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function san(name, ...kar){
+
+        //     let a = 0;
+        //     for(let b in kar){
+        //         a += kar[b];
+
+        //     }
+        //         document.write(`Hi ${name}  :  `);
+        //         document.write(a);
+        // }
+
+        // let c = [20,30,40,50];
+        // san("yahoo",...c);
+
+
+
+        //         function san(name,field, ...kar){
+
+        //     let a = 0;
+        //     for(let b in kar){
+        //         a += kar[b];
+
+        //     }
+        //         document.write(`Hi ${name} of ${field} :  `);
+        //         document.write(a);
+        // }
+
+        // let c = [20,30,40,50,50,60];
+        // san("M.Suleman","IT development",...c);
+
+
+
+        // let arr = [20,13,40,50,60];
+        // console.log(arr);
+
+
+        
+        // let arr = [20,13,40,50,60];
+        // console.log(...arr);
+
+
+        
+        // let arr = [20,13,40,50,60];
+        // console.log([...arr]);      /// cloning kar raha han yaha matlab copy ban rahi han
+
+
+        // let arr1 = [20,30,40,50];
+
+        // let arr2 = arr1;
+        // arr1.push(40);
+
+        // console.log(arr2);   /// yaha par bilkul clone kar raakha han
+
+
+        // let arr1 = [20,30,40,50];
+
+        // let arr2 = [...arr1];       ///this is speard operator assign
+        // arr1.push(40);
+
+        // console.log(arr2);  /// yahan par clone nahi ly saktay
+
+
+        
+        // let arr1 = [20,30,40,50];
+
+        // let arr2 = [60,80,70];
+        // let arr3 = arr1.concat(arr2);
+
+        // console.log(arr3);
+
+
+
+
+        // let arr1 = [20,30,40,50];
+
+        // let arr2 = [60,80,70];
+        // let arr3 = [...arr1,...arr2];
+
+        // console.log(arr3);
+
+
+        let arr1 = [20,30,40,50];
+
+        let arr2 = [60,80,70];
+        let arr3 = [60,70,...arr1,...arr2,90];
+
+        console.log(arr3);
+
+
+        
+
+        let obj1 = {
+            name : "salman",
+            class : "web development"
+        };
+        
+        let obj2 = {
+            crouse : "js"
+        };
+
+        let full = {...obj1,...obj2};
+        console.log(full);
+</script>
+</head>
+<body>
+    
+</body>
+</html>

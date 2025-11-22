@@ -1,0 +1,1 @@
+Hello this is pure txt file. Successfull Fetch.

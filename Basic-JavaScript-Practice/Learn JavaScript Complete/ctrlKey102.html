@@ -1,0 +1,199 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+    #box{
+        width: 400px;
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: rgb(36, 58, 36);
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+</style>
+<body>
+    <div id="box"></div>
+
+
+
+    <script>
+       var target =  document.querySelector("#box");
+        target.addEventListener("click",function(e){
+            // var x = e.ctrlKey;
+            // var x = e.shiftKey;
+            var x = e.altKey;
+            // var x = e.metaKey;   //means window key
+            console.log(x);
+
+        });
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+    #box{
+        width: 400px;
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: rgb(36, 58, 36);
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+</style>
+<body>
+    <div id="box"></div>
+
+
+
+    <script>
+       var target =  document.querySelector("#box");
+        target.addEventListener("click",function(e){
+            console.clear();
+            var ctrl = e.ctrlKey;
+            if(ctrl){
+                console.log("You control key pressed Passed ");
+            }else{
+                console.log("You control key Not pressed Passed ");                
+            }
+
+            // var x = e.shiftKey;
+            // var x = e.altKey;
+            // var x = e.metaKey;   //means window key
+            // console.log(x);
+
+        });
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 500px;
+            background-color: greenyellow;
+            height: 500px;
+            border: 2px solid salmon;
+            border-radius: 3px;
+            box-shadow: inset;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+       var target = document.querySelector("#box");
+       target.addEventListener("click",function(a){
+        console.clear();
+        var k;
+
+        switch (true){
+            case a.metaKey:
+                k = "meta key";
+                break;
+            case a.altKey:
+                k = "alt key";
+                break;
+            case a.shiftKey:
+                k = "shift key";
+                break;
+            case a.ctrlKey:
+                k = "ctrl key";
+                break;
+            default:
+                k = "enter your vaild key";
+                break;                
+        }
+            console.log(k);
+       });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <input type="text" id = "mytextbox">
+    <script>
+       var target = document.querySelector("#mytextbox");
+       target.addEventListener("keydown",function(a){
+        console.clear();
+        var k;
+
+        switch (true){
+            case a.metaKey:
+                k = "meta key";
+                break;
+            case a.altKey:
+                k = "alt key";
+                break;
+            case a.shiftKey:
+                k = "shift key";
+                break;
+            case a.ctrlKey:
+                k = "ctrl key";
+                break;
+            default:
+                k = "you pressed other key. plz correct key press";
+                break;                
+        }
+            console.log(k);
+       });
+    </script>
+</body>
+</html>

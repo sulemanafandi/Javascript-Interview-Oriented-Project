@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function salman(fname,lname){
+        //     let a = `Hello ${fname} ${lname} `;
+        //     return a;
+        // }
+        // let a =  salman("M","suleman");
+        // let b = salman("M","Usman");
+        // let c = salman("M","Ayan");
+        // console.log(a,b,c);
+
+        // salman = (fname,lname) => {let a = `Hi ${fname} ${lname}`;
+        // return a;}
+        // console.log("salo","bahi");
+        // console.log("salman","khan");
+
+
+        // function salo(){
+        //     console.log(arguments);
+        // }
+
+        // salo("salman","shahid","mani","kaaram ali","khan");
+
+
+        // function sum(){
+
+        //     let sum = 0;
+        //     for(let i in arguments){
+        //         sum += arguments[i];
+        //     }
+        //         console.log(sum);
+
+        // }
+        // sum(20,30,40,50);
+        // sum(20,30);
+
+
+        // function kar(){
+
+        //     let sal = 0;
+        //     for(let z in arguments){
+        //         sal += arguments[z];
+        //     }
+        //     console.log(sal);
+        // }
+
+        // kar(12,13,14,15);
+
+        
+
+
+        // function sum(name,...args){
+
+        //     let a = 0;
+        //     for(let i in args){
+        //         a += args[i];
+        //     }
+
+        //     document.write(`Hello ${name}  :`);
+        //     document.write(a + "<br>");
+
+        // }
+        // sum("yahoo",20,23,32);
+        // sum("salman",20,70,32);
+
+
+        
+        function sum(name,education, ...args){
+
+            let a = 0;
+            for(let i in args){
+                a += args[i];
+            }
+
+            document.write(`Hello ${name} of ${education} :`);
+            document.write(a + "<br>");
+
+        }
+        sum("yahoo","BSc",20,23,32);
+        sum("salman","FSc",20,70,32,70,58);
+        
+</script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let p1 = new Promise((resolve,reject) =>{
+        //     setTimeout(() =>{
+        //         console.log(`The first promise has resolved.`);
+        //         resolve(10);
+        //     },  1000);
+        // });
+        // let p2= new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         console.log(`The Second promise has resolved.`);
+        //         resolve(20);
+        //     }, 2000);
+        // });
+        // let p3= new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         console.log(`The Third promise has resolved.`);
+        //         resolve(30);
+        //     }, 3000);
+        // });
+
+
+        // Promise.all([p1,p2,p3]).then((result) => {
+        //     console.log(`Result : ${result}`);
+        // }).catch((eror) => {
+        //     console.log(`Error : ${result}`);
+        // });
+
+
+
+
+
+
+
+
+        // let p1 = new Promise((resolve,reject) =>{
+        //     setTimeout(() =>{
+        //         console.log(`The first promise has resolved.`);
+        //         resolve(10);
+        //     }, 1* 1000);
+        // });
+        // let p2= new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         console.log(`The Second promise has resolved.`);
+        //         resolve(20);
+        //     }, 2 *1000);
+        // });
+        // let p3= new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         console.log(`The Third promise has resolved.`);
+        //         resolve(30);
+        //     }, 3 *1000);
+        // });
+
+        // let total = 0;
+        // Promise.all([p1,p2,p3]).then((result) => {
+        //     for(let i in result){ total += result[i];}
+        //     console.log(`Result : ${result}`);
+        //     console.log(`Total : ${total}`);
+        // }).catch((eror) => {
+        //     console.log(`Error : ${eror}`);
+        // });
+
+
+
+
+
+
+
+
+
+
+        // let p1 = new Promise((resolve,reject) =>{
+        //     setTimeout(() =>{
+        //         console.log(`The first promise has resolved.`);
+        //         resolve(10);
+        //     }, 1* 1000);
+        // });
+        // let p2= new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         console.log(`The Second promise has rejected.`);
+        //         reject("Failed");
+        //     }, 2 *1000);
+        // });
+        // let p3= new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         console.log(`The Third promise has resolved.`);
+        //         resolve(30);
+        //     }, 3 *1000);
+        // });
+
+        // let total = 0;
+        // Promise.all([p1,p2,p3]).then((result) => {
+        //     for(let i in result){ total += result[i];}
+        //     console.log(`Result : ${result}`);
+        //     console.log(`Total : ${total}`);
+        // }).catch((eror) => {
+        //     console.log(`Error : ${eror}`);
+        // });
+
+
+
+
+
+
+    //     let promisecall = function(returnData,messege){
+    //         return function(resolve,reject){
+    //         setTimeout(() =>{
+    //             console.log(`The ${messege} promise has resolved.`);
+    //             resolve(returnData);
+    //         }, returnData * 100);
+    //     };
+    // };
+        
+    //     let p1 = new Promise(promisecall(10,"First"));
+    //     let p2 = new Promise(promisecall(20,"Second"));
+    //     let p3 = new Promise(promisecall(30,"Third"));
+    //     let total = 0;
+    //     Promise.all([p1,p2,p3]).then((result) => {
+    //         for(let i in result){ total += result[i];}
+    //         console.log(`Result : ${result}`);
+    //         console.log(`Total : ${total}`);
+    //     }).catch((eror) => {
+    //         console.log(`Error : ${eror}`);
+    //     });
+
+
+
+
+
+
+    let promisecall = function(returnData,messege){
+            return function(resolve,reject){
+            setTimeout(() =>{
+                console.log(`The ${messege} promise has resolved.`);
+                resolve(returnData);
+            }, returnData * 100);
+        };
+    };
+        
+        let p1 = new Promise(promisecall(10,"First"));
+        let p2 = new Promise(promisecall(20,"Second"));
+        let p3 = new Promise(promisecall(30,"Third"));
+        let p4 = new Promise((function(resolve , reject){
+            reject(`The forth Messege has rejected`);
+        }));
+        let total = 0;
+        Promise.all([p1,p2,p3,p4]).then((result) => {
+            for(let i in result){ total += result[i];}
+            console.log(`Result : ${result}`);
+            console.log(`Total : ${total}`);
+        }).catch((eror) => {
+            console.log(`Error : ${eror}`);
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

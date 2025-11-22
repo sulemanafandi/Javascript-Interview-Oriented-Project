@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id= "demo">Here we data load</p>
+    <button onclick="loadData()">Click</button>
+
+
+    <script>
+        // function loadData(){
+        //     var xmlhttp = new XMLHttpRequest();
+        //     xmlhttp.onreadystatechange = function(){
+        //         if(this.readyState == 4 && this.status == 200){
+        //             console.log(this.responseText);
+        //         }
+        //     };
+
+
+
+        //     xmlhttp.open("GET","readme.txt",true);
+        //     xmlhttp.send();
+        // }
+
+
+
+
+
+
+//         function loadData(){
+//             var xmlhttp = new XMLHttpRequest();
+//                 xmlhttp.onreadystatechange = function(){
+//                     if(this.readyState == 4 && this.status == 200){
+//                         document.getElementById("demo").innerHTML = this.responseText;
+//                     }
+//                 };
+            
+//            xmlhttp.open("GET","readme.txt",true);
+//             xmlhttp.send();
+// }
+
+
+        function loadData(){
+            var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                document.getElementById("demo").innerHTML = this.responseText;    // acutual life may ager kam karna ho tu yaha agay wala code b likh sakta han   "console.log(this.responseText);" or nichay readme.txt ki jaga bas us ki path do gy example https.//.mgtddsvs.            
+                }else if(this.readyState == 4 && this.status == 404){
+                document.getElementById("demo").innerHTML = "File Not Found.";
+                }
+            };
+            xmlhttp.open("GET","readme.txt",true);
+            xmlhttp.send();
+        }
+
+
+
+
+
+  </script>
+</body>
+</html>

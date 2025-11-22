@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let num = [100,200,300];
+        // console.log(num);
+
+
+
+        // let num = [100,200,300];
+        // console.log(num[Symbol.iterator]);
+
+
+
+        // let num = [100,200,300];
+        // let digit = num[Symbol.iterator]();
+        // console.log(digit);
+
+
+
+        // let num = [100,200,300];
+        // let digit = num[Symbol.iterator]();
+        // console.log(digit.next());
+
+
+
+        // let num = [100,200,300];
+        // let digit = num[Symbol.iterator]();
+        // console.log(digit.next());
+        // digit.next();
+        // console.log(digit.next());
+        // console.log(digit.next());
+
+
+
+
+        // let num = [100,200,300];
+        // let digit = num[Symbol.iterator]();
+        // console.log(digit.next());
+        // console.log(digit.next().value);
+        // console.log(digit.next());
+        // console.log(digit.next().done);
+
+
+
+        // let num = [100,200,300];
+        // let digit = num[Symbol.iterator]();
+        // digit.next();
+        // console.log(digit.next().value);
+        // console.log(digit.next());
+
+
+
+        
+        // let num = [100,200,250,300,400];
+
+        // for(let char of num){
+        //     console.log(char);
+        // }
+
+
+        let number = [100,200,300,400];
+
+        let num = numbiter(number);
+
+        function numbiter(arr){
+            var nextNum = 0;
+            return{
+                next(){
+                    if(nextNum < arr.length){
+                        return{
+                            value : arr[nextNum++],
+                            done : false
+                        }
+                        }else{
+                            return{
+                                done : true
+                            }
+                        }
+                    }
+                }
+            }
+            console.log(num.next().value);
+            console.log(num.next().value);
+            console.log(num.next().value);
+            console.log(num.next().value);
+            console.log(num.next().value);
+            console.log(num.next().value);
+
+
+
+        
+        
+
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

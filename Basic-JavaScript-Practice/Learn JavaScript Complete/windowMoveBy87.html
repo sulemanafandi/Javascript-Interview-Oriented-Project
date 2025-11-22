@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+<!--   us may moveby b laga saktay ho jo moveto k double kam karay ga -->
+    <button onclick = "openwindow()">Open Window</button>
+    <button onclick = "movewindow()">Move Window</button>
+    <script>
+        function openwindow(){
+            mywindow = window.open();
+            mywindow.document.write("<p>THIS IS MY WINDOW</p>");
+        }
+        function movewindow(){
+            mywindow = moveTo(400,800);
+        }
+    </script>
+</body>
+</html>

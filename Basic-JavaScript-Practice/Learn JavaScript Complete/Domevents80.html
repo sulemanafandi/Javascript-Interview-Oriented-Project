@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+    <label for="text">Name</label><input type="text" id="fname" onfocus="focusFunction()"><br><br> 
+    <label for="text">Name</label><input type="text" onfocus="focusFunction(this)" onblur="blurFunction(this)"><br><br>
+    <label for="text">Fathter-Name</label><input type="text"  onfocus="focusFunction(this)" onblur="blurFunction(this)"><br><br>
+    <label for="text">Country</label>
+    <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        <option value="">Palestine</option>
+        <option value="">Pakistan</option>
+        <option value="">India</option>
+        <option value="">America</option>
+        <option value="">Afghanistan</option>
+        <option value="">China</option>
+    </select>
+</form>
+<script>
+    function focusFunction(element){
+        // document.getElementById("fname").style.background = "lime";
+        element.style.background = "lime";
+    }
+    function blurFunction(blur){
+        blur.style.background = ""
+    }
+</script>
+</body>
+</html>  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="text">Name</label><input type="text" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)"><br><br>
+        <label for="text">Fathter-Name</label><input type="text"  onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)"><br><br>
+        <label for="text">Country</label>
+        <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)">
+            <option value="Palestine">Palestine</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="China">China</option>
+        </select>
+        <br>
+    </form>
+    <div id="test" style = "border: 50px solid red;"></div>
+    <script>
+        function focusFunction(element){
+            // document.getElementById("fname").style.background = "lime";
+            element.style.background = "lime";
+        }
+        function blurFunction(blur){
+            blur.style.background = ""
+        }
+        
+        function inputFunction(color){
+            var x = color.value;
+            document.getElementById("test").innerHTML = x;
+        }
+    </script>
+    
+</body>
+</html>
