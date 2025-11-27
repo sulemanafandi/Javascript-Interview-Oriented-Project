@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images.png" alt="">
+        </div>
+        <div class="nav-link">
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Services</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <div class="search">
+                <input type="search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass se"></i>
+            </div>
+        </div>
+        <div class="humburger">
+            <img src="download.png" alt="" onclick="toggleSidebar()">
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images.png" alt="">
+            <i class="fa-solid fa-xmark icon" onclick="toggleSidebar()"></i>
+        </div>
+        <div class="sidebar-navlinks">
+            <div class="search">
+                <input type="search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass se"></i>
+            </div>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Services</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+#emailError{
+    color: red;
+    font-weight: 600;
+    display: none;
+}
+#passError{
+    color: red;
+    font-weight: 600;
+    display: none;
+}

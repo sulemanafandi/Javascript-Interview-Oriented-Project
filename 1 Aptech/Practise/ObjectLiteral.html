@@ -1,0 +1,40 @@
+<script>
+    let idInput = Number(prompt('Enter your Id Number'));
+    let nameInput = (prompt('Enter your Name Number'));
+    let engInput = Number(prompt('Enter your English Number'));
+    let mathInput = Number(prompt('Enter your Math Number'));
+    let phyInput = Number(prompt('Enter your Physics Number'));
+    let chemInput = Number(prompt('Enter your Chemistry Number'));
+
+    let marksheet = {
+        id: idInput,
+        name: nameInput,
+        english: engInput,
+        math: mathInput,
+        physics: phyInput,
+        chemistry: chemInput,
+        ObtainedMark: function (english, math, physics, chemistry) {
+            return english + math + physics + chemistry
+        },
+        percentage: function (ObtainedMark) {
+            return (ObtainedMark / 400) * 100;
+        },
+        grade: function (percentage) {
+            if (percentage >= 80 && percentage <= 100) {
+                console.log('Passed')
+            } else {
+                console.log('Failed')
+            }
+        }
+    }
+
+    console.log('Id : ', marksheet.id);
+    console.log('Name : ', marksheet.name);
+    let obtained = marksheet.ObtainedMark(engInput, mathInput, phyInput, chemInput)
+    console.log('Obtained Mark :', obtained);
+
+    let per = marksheet.percentage(obtained);
+    console.log('Percentage :', per);
+
+    marksheet.grade(per);
+</script>

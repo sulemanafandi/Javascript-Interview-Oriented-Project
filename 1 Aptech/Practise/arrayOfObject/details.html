@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Card.css">
+    <title>Details</title>
+
+</head>
+
+<body>
+    <div class="detail-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="" id="proimage" class="img-fluid" alt="">
+                </div>
+                <div class="col-6">
+                    <h1 class="display-3" id="protitle">Title</h1>
+                    <h3 class="display-6" id="procaterogy">Category</h3>
+                    <h4 id="proprice">$899</h4>
+                    <p id="prodescription">Lorem ipsum</p>
+                    <button class="btn btn-primary">Download Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Card.js"></script>
+
+    <script>
+        let url = new URL(window.location.href);
+        let index = url.searchParams.getAll('index');
+        console.log(products[index])
+
+        document.getElementById('proimage').setAttribute('src', products[index].image)
+        document.getElementById('protitle').innerHTML = products[index].title;
+        document.getElementById('proprice').innerHTML = products[index].price;
+        document.getElementById('procaterogy').innerHTML = products[index].category;
+        document.getElementById('prodescription').innerHTML = products[index].discription;
+        
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

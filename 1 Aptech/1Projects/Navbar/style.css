@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.navbar {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+.logo img {
+  width: 40px;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s ease-in-out all;
+}
+.nav-link a:hover {
+  transform: translateY(-5px);
+}
+.humburger {
+  display: none;
+}
+.humburger img {
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .humburger {
+    display: block;
+  }
+  .nav-link {
+    display: none;
+  }
+}
+
+.sidebar {
+  height: 100vh;
+  width: 300px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  transform: translateX(-100%);
+  transition: 0.4s ease-in-out all;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-header .icon {
+  color: white;
+  font-size: 25px;
+  width: 50px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.sidebar-header img {
+  width: 50px;
+}
+.sidebar-navlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 70px;
+}
+.sidebar-navlinks a {
+  color: rgba(255, 255, 255, 0.678);
+  text-decoration: none;
+  font-size: 25px;
+  border-bottom: 2px solid #eeeeee83;
+  transition: 0.4s ease-in-out all;
+}
+.sidebar-navlinks a:hover {
+  transform: translateX(7px);
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+.sidebar-active {
+  transform: translateX(0%);
+}
+.search {
+  background-color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+}
+.search input {
+  background-color: transparent;
+  border: none;
+}
+.search input:focus {
+  outline: none;
+}
