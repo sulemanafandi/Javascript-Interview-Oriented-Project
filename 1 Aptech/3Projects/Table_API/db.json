@@ -1,0 +1,16 @@
+{
+  "Student": [
+    {
+      "id": "8ab8",
+      "stdId": "599c1237-158a-4e24-b194-22ac958491e0",
+      "name": "Muhammad Suleman",
+      "age": "23"
+    },
+    {
+      "id": "30ff",
+      "stdId": "dadaa23e-30ea-43fc-99b0-147a51294a33",
+      "name": "Muhammad Suleman",
+      "age": "21"
+    }
+  ]
+}

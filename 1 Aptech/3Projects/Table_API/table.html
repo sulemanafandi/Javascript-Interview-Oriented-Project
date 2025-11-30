@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>1</td>
+                <td>Salman</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let tableBody = document.getElementById('tableBody');
+        async function fetchData() {
+            let response = await fetch('http://localhost:3000/Student', {
+                method: 'get',
+            });
+            let data = await response.json();
+
+            tableBody.innerHTML = '';
+            for (let i = 0; i < data.length; i++) {
+                tableBody.innerHTML += `
+                <tr>
+                    <td>${data[i].stdId}</td>
+                    <td>${data[i].name}</td>
+                    <td>${data[i].age}</td>
+               </tr>
+                `;
+            }
+        }
+        fetchData()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
